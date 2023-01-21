@@ -16,7 +16,7 @@
         "tsConfig": "apps/cnmindia.in/tsconfig.app.json",
         "assets": [
           "apps/cnmindia.in/src/favicon.ico",
-          "apps/cnmindia.in/src/assets"
+          { "glob": "**/*", "input": "apps/cnmindia.in/src/assets", "output": "/" }
         ],
         "styles": ["apps/cnmindia.in/src/styles.css"],
         "scripts": []
