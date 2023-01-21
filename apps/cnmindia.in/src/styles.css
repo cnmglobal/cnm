@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Recline";
+  src: url("./assets/fonts/Recline-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Recline";
+  src: url("./assets/fonts/Recline-Light.otf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Recline";
+  src: url("./assets/fonts/Recline-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Recline";
+  src: url("./assets/fonts/Recline-SemiBold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Recline";
+  src: url("./assets/fonts/Recline-LightItalic.otf");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Recline";
+  src: url("./assets/fonts/Recline-MediumItalic.otf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Recline";
+  src: url("./assets/fonts/Recline-SemiBoldItalic.otf");
+  font-weight: 600;
+  font-style: italic;
+}
+

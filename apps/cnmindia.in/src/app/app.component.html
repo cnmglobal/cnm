@@ -1,1 +1,46 @@
-<cnm-nx-welcome></cnm-nx-welcome>
+<div class="section top-0 z-50 w-full fixed animate-in fade-in duration-1000 delay-150">
+  <div class="container p-5 mt-5 bg-slate-900 bg-opacity-95 shadow-md text-white">
+    <div class="flex justify-center items-center">
+      <!-- <img class="w-20" src="https://cnmindia.in/images/logo_black.png" alt=""> -->
+      <ul class="flex gap-x-16 font-medium text-md">
+        <li class="cursor-pointer group">
+          <a class="relative" [routerLink]="['/']">
+            Home
+            <div class="transition-all duration-300 {{this.activeRoute==='/'?'bg-white':'group-hover:bg-white'}} h-1 rounded-lg" ></div>
+          </a>
+        </li>
+        <li class="cursor-pointer group">
+          <a class="relative" [routerLink]="['/','about']">
+            About
+            <div class="transition-all duration-300 {{this.activeRoute==='/about'?'bg-white':'group-hover:bg-white'}}  h-1 rounded-lg" ></div>
+          </a>
+        </li>
+        <li class="cursor-pointer group">
+          <a class="relative" [routerLink]="['/','what-we-do']">
+            What we do
+            <div class="transition-all duration-300 {{this.activeRoute==='/what-we-do'?'bg-white':'group-hover:bg-white'}} h-1 rounded-lg" ></div>
+          </a>
+        </li>
+        <li class="cursor-pointer group">
+          <a class="relative" [routerLink]="['/','our-works']">
+            Our works
+            <div class="transition-all duration-300 {{this.activeRoute==='/our-works'?'bg-white':'group-hover:bg-white'}} h-1 rounded-lg" ></div>
+          </a>
+        </li>
+        <li class="cursor-pointer group">
+          <a class="relative" [routerLink]="['/','culture']">
+            Culture
+            <div class="transition-all duration-300 {{this.activeRoute==='/culture'?'bg-white':'group-hover:bg-white'}} h-1 rounded-lg" ></div>
+          </a>
+        </li>
+        <li class="cursor-pointer group">
+          <a class="relative" [routerLink]="['/','contact']">
+            Contact
+            <div class="transition-all duration-300 {{this.activeRoute==='/contact'?'bg-white':'group-hover:bg-white'}} h-1 rounded-lg" ></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

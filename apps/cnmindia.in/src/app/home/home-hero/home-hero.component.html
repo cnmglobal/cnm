@@ -1,0 +1,41 @@
+<div class="section relative">
+  <div
+    class="z-30 absolute w-full h-full flex items-center justify-center bg-yellow-900 bg-opacity-10"
+  >
+    <p
+      class="ease-in-out select-none {{this.showCNM?'2xl:text-[500px]':'2xl:text-[100px]'}} text-white font-bold font-brand {{this.showCNM?'text-opacity-100':'text-opacity-0'}} transition-all duration-1000"
+      style="text-shadow: 2px 2px 15px #00000040"
+    >
+      CNM
+    </p>
+  </div>
+  <div
+    class="animate-in fade-in duration-1000 delay-150 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5 p-16 pt-28"
+  >
+    <div
+      class="relative h-auto w-full aspect-video perspective"
+      *ngFor="let image of homeImages; let i = index"
+    >
+      <div
+        class="relative duration-1000 h-auto w-full aspect-video {{
+          this.flip && this.flipID === i ? 'rotate-y-180' : ''
+        }} preserve-3d"
+      >
+        <div class="backface-hidden absolute w-full h-full">
+          <img
+            class="aspect-video object-center object-cover"
+            src="../../assets/home-images/{{ image.img }}"
+            alt=""
+          />
+        </div>
+        <div class="backface-hidden rotate-y-180 absolute w-full h-full">
+          <div
+            class="flex items-center justify-center w-full h-full bg-slate-900"
+          >
+            <p class="text-white text-3xl">{{ image.caption }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
